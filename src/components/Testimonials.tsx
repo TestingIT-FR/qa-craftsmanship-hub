@@ -3,50 +3,50 @@ import { Card, CardContent } from "@/components/ui/card";
 
 const testimonials = [
   {
-    name: "Thomas",
-    role: "Lead Developer",
-    company: "Tech Startup",
-    content: "Stéphane a transformé notre approche des tests automatisés. Son expertise en Cypress nous a permis de réduire drastiquement le temps de validation de nos releases.",
-    rating: 5,
-    source: "LinkedIn"
-  },
-  {
-    name: "Marie",
-    role: "Product Manager",
-    company: "E-commerce",
-    content: "Excellent travail sur la mise en place de notre stratégie QA. Stéphane est très professionnel et ses conseils ont été précieux pour améliorer la qualité de nos livraisons.",
+    name: "Daniel",
+    role: "GIE April Courtage",
+    company: "April Digital",
+    content: "Parti d'une feuille blanche, il a eu la responsabilité de mettre en place un framework d'automatisation des tests avec Cypress. Il a rapidement su s'adapter à notre environnement de travail agile et changeant.",
     rating: 5,
     source: "Malt"
   },
   {
-    name: "Pierre",
-    role: "CTO",
-    company: "Fintech",
-    content: "Je recommande vivement Stéphane pour ses compétences techniques exceptionnelles en automatisation. Il a su s'adapter rapidement à notre stack technique complexe.",
-    rating: 5,
-    source: "LinkedIn"
-  },
-  {
-    name: "Sophie",
-    role: "Tech Lead",
-    company: "SaaS",
-    content: "Collaboration parfaite avec Stéphane sur l'implémentation de Playwright. Son expertise et sa pédagogie ont permis à toute l'équipe de monter en compétences.",
+    name: "Nicolas",
+    role: "Pass Culture - Pôle Tech",
+    company: "Pass Culture",
+    content: "Nous avons apprécié la collaboration avec Stéphane. Il nous a aidé à agrandir le périmètre de couverture de test de bout en bout. Il a mis en place des test E2E stables en 'CI'.",
     rating: 5,
     source: "Malt"
   },
   {
-    name: "Laurent",
-    role: "DevOps Engineer",
-    company: "Scale-up",
-    content: "Stéphane a mis en place une infrastructure de tests robuste qui nous fait gagner un temps précieux. Son approche méthodique est remarquable.",
+    name: "Valentin",
+    role: "Actiondesk",
+    company: "Actiondesk",
+    content: "Stéphane a fait une mission ponctuelle avec nous pour auditer l'état de nos tests e2e. Il nous a donné de très bon insights qui vont nous permettre de mieux les structurer.",
     rating: 5,
-    source: "LinkedIn"
+    source: "Malt"
   },
   {
-    name: "Camille",
-    role: "Frontend Developer",
-    company: "Média",
-    content: "Formation très enrichissante dispensée par Stéphane sur les bonnes pratiques de test. Il sait transmettre son savoir avec clarté et patience.",
+    name: "Pascal",
+    role: "Efalia",
+    company: "Efalia",
+    content: "Nous avons collaboré quelques jours avec Stéphane et son travail très professionnel a donné pleine et entière satisfaction ! Nous ne pouvons que le recommander !",
+    rating: 5,
+    source: "Malt"
+  },
+  {
+    name: "Xavier",
+    role: "JSoufflet",
+    company: "Soufflet",
+    content: "La collaboration de Stéphane au sein de l'équipe Digital a permis d'être plus réactif et mieux organisé dans les phases de testing de nos applications Mobiles. Son expérience et ses qualités de testeur ont été cruciales.",
+    rating: 5,
+    source: "Malt"
+  },
+  {
+    name: "Équipe",
+    role: "Client anonyme",
+    company: "Startup Tech",
+    content: "Stéphane nous a accompagné dans la mise en place de tests automatiques end-to-end avec cypress. Il a rédigé les premiers tests et formé l'équipe technique. Nous sommes très satisfaits du travail réalisé.",
     rating: 5,
     source: "Malt"
   }
