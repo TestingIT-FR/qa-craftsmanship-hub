@@ -67,7 +67,7 @@ const Footer = () => {
               </div>
               <div className="flex items-center gap-2 text-sm text-primary-foreground/80">
                 <Mail className="w-4 h-4" />
-                stephane@example.com
+                stephane-testingit@pm.me
               </div>
               <Badge className="bg-green-500/20 text-green-300 border-green-500/30">
                 ✅ Disponible pour missions
@@ -98,7 +98,7 @@ const Footer = () => {
               <Linkedin className="w-5 h-5" />
             </a>
             <a 
-              href="mailto:stephane@example.com"
+              href="mailto:stephane-testingit@pm.me"
               className="text-primary-foreground/60 hover:text-white transition-colors"
             >
               <Mail className="w-5 h-5" />

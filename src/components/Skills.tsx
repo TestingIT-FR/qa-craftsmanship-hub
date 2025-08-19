@@ -73,24 +73,7 @@ const Skills = () => {
           ))}
         </div>
         
-        <div className="grid md:grid-cols-2 gap-8">
-          <Card className="bg-tech-gradient-soft border border-primary/20">
-            <CardContent className="p-8">
-              <h3 className="text-xl font-semibold mb-6 text-center">Certifications</h3>
-              <div className="grid grid-cols-2 gap-3">
-                {certifications.map((cert, index) => (
-                  <Badge 
-                    key={index} 
-                    variant="secondary" 
-                    className="p-3 text-center justify-center bg-white/50 hover:bg-white/70 transition-colors"
-                  >
-                    {cert}
-                  </Badge>
-                ))}
-              </div>
-            </CardContent>
-          </Card>
-          
+        <div className="max-w-2xl mx-auto">
           <Card className="bg-card-gradient border border-primary/10">
             <CardContent className="p-8">
               <h3 className="text-xl font-semibold mb-6 text-center">Secteurs d'activité</h3>
