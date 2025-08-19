@@ -44,8 +44,8 @@ const Navigation = () => {
               SC
             </div>
             <div>
-              <div className="font-semibold text-foreground">Stéphane Colson</div>
-              <div className="text-xs text-muted-foreground">QA Expert</div>
+              <div className={`font-semibold ${isScrolled ? 'text-foreground' : 'text-white'}`}>Stéphane Colson</div>
+              <div className={`text-xs ${isScrolled ? 'text-muted-foreground' : 'text-white/70'}`}>QA Expert</div>
             </div>
           </div>
 
@@ -55,7 +55,7 @@ const Navigation = () => {
               <button
                 key={item.href}
                 onClick={() => scrollToSection(item.href)}
-                className="text-foreground hover:text-primary transition-colors"
+                className={`${isScrolled ? 'text-foreground hover:text-primary' : 'text-white hover:text-white/80'} transition-colors`}
               >
                 {item.label}
               </button>
@@ -85,7 +85,7 @@ const Navigation = () => {
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden"
+            className={`md:hidden ${isScrolled ? 'text-foreground' : 'text-white'}`}
             onClick={() => setIsOpen(!isOpen)}
           >
             {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
