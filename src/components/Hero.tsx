@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { ArrowRight, Download, Mail } from "lucide-react";
 import qaHeroImage from "@/assets/qa-automation-hero.jpg";
-import stephanePortrait from "@/assets/stephane-portrait.jpg";
+import stephanePortrait from "@/assets/stephane-profile-real.jpg";
 
 const Hero = () => {
   return (
