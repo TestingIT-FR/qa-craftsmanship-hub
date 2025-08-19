@@ -59,7 +59,7 @@ const Services = () => {
                   <p className="text-muted-foreground">{service.description}</p>
                 </div>
                 
-                <ul className="space-y-2 mb-6">
+                <ul className="space-y-2">
                   {service.features.map((feature, idx) => (
                     <li key={idx} className="flex items-center gap-2 text-sm">
                       <CheckCircle className="w-4 h-4 text-green-500" />
@@ -67,11 +67,6 @@ const Services = () => {
                     </li>
                   ))}
                 </ul>
-                
-                <Button variant="outline" className="w-full group-hover:bg-primary group-hover:text-primary-foreground transition-colors duration-300">
-                  En savoir plus
-                  <ArrowRight className="w-4 h-4 ml-2" />
-                </Button>
               </CardContent>
             </Card>
           ))}
