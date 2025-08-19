@@ -17,7 +17,7 @@ const contactMethods = [
     icon: Mail,
     title: "Email",
     description: "La meilleure façon de me contacter",
-    action: "stephane-testingit@pm.me",
+    action: "M'écrire",
     link: "mailto:stephane-testingit@pm.me",
     primary: true
   },
