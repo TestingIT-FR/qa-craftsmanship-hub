@@ -9,8 +9,12 @@ const Footer = () => {
           {/* About */}
           <div>
             <div className="flex items-center gap-3 mb-4">
-              <div className="w-10 h-10 bg-white/20 rounded-lg flex items-center justify-center text-white font-bold">
-                SC
+            <div className="w-10 h-10 rounded-lg overflow-hidden bg-white/10 backdrop-blur-sm">
+              <img 
+                src="/lovable-uploads/9107669c-5ad1-4bab-884c-73e9dd8fe892.png" 
+                alt="Logo de l'entreprise"
+                className="w-full h-full object-cover"
+              />
               </div>
               <div>
                 <div className="font-semibold">Stéphane Colson</div>
