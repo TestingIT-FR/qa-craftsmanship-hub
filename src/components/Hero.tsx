@@ -33,28 +33,6 @@ const Hero = () => {
             avec Cypress, Playwright et les dernières technologies.
           </p>
           
-          <div className="flex flex-col sm:flex-row gap-4">
-            <Button 
-              size="lg" 
-              className="bg-white text-primary hover:bg-white/90 shadow-tech transition-all duration-300 hover:scale-105"
-              asChild
-            >
-              <a href="mailto:stephane-testingit@pm.me">
-                <Mail className="w-5 h-5 mr-2" />
-                Me contacter
-                <ArrowRight className="w-5 h-5 ml-2" />
-              </a>
-            </Button>
-            <Button 
-              size="lg" 
-              variant="outline" 
-              className="bg-white/10 text-white border-white/30 hover:bg-white/20 backdrop-blur-sm transition-all duration-300 hover:scale-105"
-            >
-              <Download className="w-5 h-5 mr-2" />
-              Télécharger CV
-            </Button>
-          </div>
-          
           <div className="flex items-center gap-8 pt-8 border-t border-white/20">
             <div className="text-center">
               <div className="text-2xl font-bold text-white">20+</div>

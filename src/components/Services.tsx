@@ -80,7 +80,9 @@ const Services = () => {
             discutons de votre projet pour trouver la meilleure approche.
           </p>
           <Button size="lg" className="shadow-tech">
-            Discuter de votre projet
+            <a href="mailto:stephane-testingit@pm.me">
+              Discuter de votre projet
+            </a>
           </Button>
         </div>
       </div>
