@@ -22,8 +22,8 @@ const Footer = () => {
               </div>
             </div>
             <p className="text-primary-foreground/80 text-sm leading-relaxed">
-              Plus de 20 ans d'expérience dans l'automatisation de tests avec Cypress, 
-              Playwright et les dernières technologies QA.
+              Plus de 20 ans d'expérience en QA, développement et 
+              automatisation de tests avec Cypress, Playwright, etc...
             </p>
           </div>
 

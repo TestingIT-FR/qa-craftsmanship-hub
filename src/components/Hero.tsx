@@ -28,9 +28,9 @@ const Hero = () => {
           </div>
           
           <p className="text-lg text-white/80 leading-relaxed max-w-xl">
-            Plus de 20 ans d'expérience dans l'automatisation de tests. 
+            Plus de 20 ans d'expérience en tant que testeur logiciel. 
             Je vous aide à mettre en place des stratégies de test efficaces 
-            avec Cypress, Playwright et les dernières technologies.
+            et à automatiser avec Cypress, Playwright...
           </p>
           
           <div className="flex items-center gap-8 pt-8 border-t border-white/20">

@@ -24,35 +24,35 @@ const experiences = [
     type: "Mission Freelance",
     description: "Automatisation des parcours de courtage des offres d'assurance",
     achievements: [
-      "Tests end-to-end des parcours clients",
+      "Tests end-to-end des parcours pro et client avec Cypress",
       "Intégration CI/CD avec Jenkins",
-      "Réduction de 70% du temps de regression"
+      "Réduction de 70% du temps de test post-release"
     ]
   },
   {
-    company: "Malt",
+    company: "Talend",
     role: "QA Engineer",
     period: "2021 - 2022",
-    location: "Paris, France",
+    location: "France",
     type: "Mission Freelance", 
-    description: "Tests de l'application de messagerie et automatisation des tests d'interface",
+    description: "Tests du pipeline designer",
     achievements: [
-      "Automatisation avec Cypress et Playwright",
-      "Tests de performance et charge",
+      "Automatisation avec Playwright",
+      "Tests de non-régression",
       "Amélioration de la couverture de test de 40%"
     ]
   },
   {
     company: "Michelin Mobility Intelligence",
     role: "Mobile QA Specialist",
-    period: "2020 - 2021",
+    period: "2017 - 2018",
     location: "Clermont-Ferrand, France",
     type: "Mission Freelance",
     description: "Tests des applications mobiles Android et iOS pour le suivi de conduite",
     achievements: [
       "Tests automatisés sur devices réels",
       "Stratégie de test cross-platform",
-      "Détection précoce de régressions critiques"
+      "Détection précoce de régressions"
     ]
   }
 ];

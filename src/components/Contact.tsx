@@ -90,11 +90,12 @@ const Contact = () => {
                 </h3>
                 <div className="space-y-3">
                   {[
-                    "Lyon et 50km autour",
-                    "Paris et 50km autour", 
-                    "Genève et 50km autour",
-                    "Grenoble et 50km autour",
-                    "Marseille et 50km autour"
+                    "Lyon",
+                    "Paris", 
+                    "Genève",
+                    "Marseille",
+                    "Nantes",
+                    "Timezone CEST -/+1h",
                   ].map((zone, index) => (
                     <div key={index} className="flex items-center gap-3">
                       <div className="w-2 h-2 bg-green-500 rounded-full"></div>
@@ -104,7 +105,7 @@ const Contact = () => {
                 </div>
                 <div className="mt-6 p-3 bg-primary/5 rounded-lg">
                   <p className="text-sm text-muted-foreground">
-                    💻 <strong>Télétravail possible</strong> pour certaines missions
+                    💻 <strong>Télétravail</strong> si en dehors de Lyon
                   </p>
                 </div>
               </CardContent>
@@ -130,7 +131,7 @@ const Contact = () => {
                     </Badge>
                   </div>
                   <div className="flex items-center justify-between p-3 bg-primary/5 rounded-lg">
-                    <span className="text-sm font-medium">Tarif indicatif</span>
+                    <span className="text-sm font-medium">Tarif moyen</span>
                     <Badge variant="outline">
                       💰 600€/jour
                     </Badge>
@@ -146,7 +147,7 @@ const Contact = () => {
                 <Github className="w-12 h-12 mx-auto mb-4 opacity-90" />
                 <h3 className="text-xl font-semibold mb-4">Code & Projets</h3>
                 <p className="text-white/90 mb-6">
-                  Consultez mes projets open-source et contributions sur GitHub
+                  Consultez mes contributions sur GitHub
                 </p>
                 <div className="flex justify-center gap-6 text-sm text-white/80 mb-6">
                   <div>

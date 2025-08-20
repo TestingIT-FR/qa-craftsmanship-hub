@@ -4,17 +4,17 @@ import { Card, CardContent } from "@/components/ui/card";
 const testimonials = [
   {
     name: "Daniel",
-    role: "GIE April Courtage",
-    company: "April Digital",
-    content: "Parti d'une feuille blanche, il a eu la responsabilité de mettre en place un framework d'automatisation des tests avec Cypress. Il a rapidement su s'adapter à notre environnement de travail agile et changeant.",
+    role: "Manager équipe test/QA",
+    company: "April",
+    content: "Parti d'une feuille blanche, il a eu la responsabilité de mettre en place un framework d'automatisation des tests avec Cypress. Il a rapidement su s'adapter à notre environnement de travail agile et changeant. Son intégration rapide au sein de nos équipes a été cruciale dans le succès de cette mission. Aujourd\'hui, les tests automatisés sont devenus une composante incontournable de notre processus projet, utilisés quotidiennement par nos équipes QA, Dev et DevOps.",
     rating: 5,
     source: "Malt"
   },
   {
     name: "Nicolas",
-    role: "Pass Culture - Pôle Tech", 
+    role: "Lead QA", 
     company: "Pass Culture",
-    content: "Nous avons apprécié la collaboration avec Stéphane. Il nous a aidé à agrandir le périmètre de couverture de test de bout en bout. Il a mis en place des test E2E stables en 'CI' et il à éliminé les tests flaky au fur et à mesure.",
+    content: "Nous avons apprécié la collaboration avec Stéphane. Il nous a aidé à agrandir le périmètre de couverture de test de bout en bout. Il a mis en place des test E2E stables en 'CI' et il a éliminé les tests flaky au fur et à mesure.",
     rating: 5,
     source: "Malt"
   },
@@ -36,33 +36,25 @@ const testimonials = [
   },
   {
     name: "Xavier",
-    role: "JSoufflet", 
+    role: "Directeur Technique", 
     company: "Soufflet",
-    content: "La collaboration de Stéphane au sein de l'équipe Digital a permis d'être plus réactif et mieux organisé dans les phases de testing de nos applications Mobiles. Son expérience et ses qualités de testeur ont été cruciales.",
-    rating: 5,
-    source: "Malt"
-  },
-  {
-    name: "Équipe",
-    role: "Compte supprimé",
-    company: "Startup Tech",
-    content: "Stéphane nous a accompagné dans la mise en place de tests automatiques end-to-end avec cypress. Il a rédigé les premiers tests et formé l'équipe technique à l'utilisation de cypress. Nous sommes très satisfaits du travail réalisé.",
+    content: "La collaboration de Stéphane au sein de l'équipe Digital a permis d'être plus réactif et mieux organisé dans les phases de testing de nos applications Mobiles. Merci à Stéphane, d'une part pour son sérieux et sa rigueur dans les missions qu'il a accompli depuis plusieurs mois et d'autre part pour son professionnalisme avec la diffusion d'un rapport d'étonnement qui a permis à l'équipe de mieux appréhender ses faiblesses.",
     rating: 5,
     source: "Malt"
   },
   {
     name: "Youcef",
-    role: "Tech Lead",
-    company: "Client Malt",
-    content: "Collaboration très professionnelle avec Stéphane sur notre projet d'automatisation. Sa maîtrise technique et sa capacité d'adaptation nous ont permis d'atteindre nos objectifs rapidement.",
+    role: "Engineering Manager",
+    company: "April",
+    content: "J’ai eu le plaisir de collaborer avec Stéphane sur l’automatisation des tests end to end à l’aide de Cypress. Stéphane se distingue par sa solide expertise technique, sa rigueur et son sens du service. Il a conçu et stabilisé les tests end to end couvrant l’ensemble de nos parcours, tout en proposant des solutions durables et bien structurées. Je recommande vivement Stéphane pour son professionnalisme, la qualité de ses livrables et ses qualités humaines indéniables.",
     rating: 5,
-    source: "Malt"
+    source: "LinkedIn"
   },
   {
     name: "Ismael", 
-    role: "Product Manager",
-    company: "Startup",
-    content: "Stéphane a apporté une réelle valeur ajoutée à notre équipe QA. Son expertise en automatisation des tests nous a fait gagner un temps précieux dans nos cycles de développement.",
+    role: "QA developer",
+    company: "April",
+    content: "J'ai eu le privilège de collaborer avec Stéphane sur un projet d'automatisation des tests avec Cypress. Outre sa maîtrise technique de cette technologie, il se distingue par son sens du service, sa bienveillance et son organisation. Il possède une solide compréhension des principes de la qualité logicielle et des différents aspects de l'automatisation des tests. Stéphane a été d'une aide précieuse dans de nombreuses situations, proposant des solutions efficaces et pérennes. Son code est rigoureusement structuré. Je n'hésiterais pas une seconde à collaborer à nouveau avec Stéphane sur un futur projet, et je le recommande vivement.",
     rating: 5,
     source: "Malt"
   }
@@ -118,7 +110,7 @@ const Testimonials = () => {
 
         <div className="text-center mt-12">
           <p className="text-muted-foreground">
-            Rejoignez plus de 50+ clients satisfaits qui me font confiance pour leurs projets QA
+            Rejoignez plus de 10+ clients satisfaits qui m'ont font confiance pour leurs projets QA
           </p>
         </div>
       </div>

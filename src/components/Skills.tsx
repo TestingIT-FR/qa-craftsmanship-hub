@@ -7,9 +7,8 @@ const skillCategories = [
     title: "Outils d'automatisation",
     skills: [
       { name: "Cypress", level: 95, color: "bg-green-500" },
-      { name: "Playwright", level: 90, color: "bg-blue-500" },
-      { name: "Postman", level: 85, color: "bg-orange-500" },
-      { name: "Bruno", level: 80, color: "bg-purple-500" }
+      { name: "Playwright", level: 85, color: "bg-blue-500" },
+      { name: "Postman/Newman", level: 85, color: "bg-orange-500" }
     ]
   },
   {
@@ -17,26 +16,18 @@ const skillCategories = [
     skills: [
       { name: "JavaScript", level: 90, color: "bg-yellow-500" },
       { name: "TypeScript", level: 85, color: "bg-blue-600" },
-      { name: "React", level: 75, color: "bg-cyan-500" },
       { name: "Node.js", level: 80, color: "bg-green-600" }
     ]
   },
   {
     title: "Méthodologies",
     skills: [
-      { name: "Scrum", level: 95, color: "bg-indigo-500" },
       { name: "Test Strategy", level: 98, color: "bg-primary" },
       { name: "CI/CD", level: 85, color: "bg-red-500" },
-      { name: "Quality Assurance", level: 98, color: "bg-primary" }
+      { name: "Quality Assurance", level: 98, color: "bg-primary" },
+      { name: "Scrum", level: 95, color: "bg-indigo-500" }
     ]
   }
-];
-
-const certifications = [
-  "ISTQB Foundation Level",
-  "Cypress Certified",
-  "Scrum Master Certified",
-  "Quality Assurance Expert"
 ];
 
 const Skills = () => {
@@ -79,12 +70,13 @@ const Skills = () => {
               <h3 className="text-xl font-semibold mb-6 text-center">Secteurs d'activité</h3>
               <div className="space-y-3">
                 {[
-                  "Assurance & Fintech",
+                  "Assurance ",
                   "E-commerce",
                   "Culture & Éducation", 
                   "Mobilité & Transport",
                   "Édition de logiciels",
-                  "Administration publique"
+                  "Administration publique",
+                  "Cybersécurité"
                 ].map((sector, index) => (
                   <div key={index} className="flex items-center gap-3 p-2 rounded-lg hover:bg-primary/5 transition-colors">
                     <div className="w-2 h-2 bg-primary rounded-full"></div>
@@ -104,7 +96,7 @@ const Skills = () => {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Badge className="bg-primary/20 text-primary border-primary/30 p-2">
-              📍 Lyon, Paris, Genève, Grenoble, Marseille
+              📍 Lyon, Paris, Europe, Monde en remote...
             </Badge>
             <Badge className="bg-primary/20 text-primary border-primary/30 p-2">
               💰 600€/jour
