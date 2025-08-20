@@ -79,12 +79,10 @@ const Services = () => {
             Que ce soit pour une mission courte ou longue, en équipe ou en solo, 
             discutons de votre projet pour trouver la meilleure approche.
           </p>
-          <Button 
-            size="lg" 
-            className="shadow-tech"
-            onClick={() => window.location.href = 'mailto:stephane-testingit@pm.me'}
-          >
-            Discuter de votre projet
+          <Button size="lg" className="shadow-tech" asChild>
+            <a href="mailto:stephane-testingit@pm.me" target="_blank" rel="noopener noreferrer">
+              Discuter de votre projet
+            </a>
           </Button>
         </div>
       </div>
