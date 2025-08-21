@@ -19,14 +19,6 @@ const testimonials = [
     source: "Malt"
   },
   {
-    name: "Valentin",
-    role: "Actiondesk",
-    company: "Actiondesk", 
-    content: "Stéphane a fait une mission ponctuelle avec nous pour auditer l'état de nos tests e2e. Il nous a donné de très bon insights qui vont nous permettre de mieux les structurer et de progresser plus rapidement!",
-    rating: 5,
-    source: "Malt"
-  },
-  {
     name: "Pascal",
     role: "Efalia",
     company: "Efalia",
