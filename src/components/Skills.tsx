@@ -27,6 +27,13 @@ const skillCategories = [
       { name: "Quality Assurance", level: 98, color: "bg-primary" },
       { name: "Scrum", level: 95, color: "bg-indigo-500" }
     ]
+  },
+  {
+    title: "Langues",
+    skills: [
+      { name: "Français", level: 100, color: "bg-blue-600" },
+      { name: "Anglais", level: 85, color: "bg-red-500" }
+    ]
   }
 ];
 
@@ -43,7 +50,7 @@ const Skills = () => {
           </p>
         </div>
         
-        <div className="grid lg:grid-cols-3 gap-8 mb-16">
+        <div className="grid lg:grid-cols-4 md:grid-cols-2 gap-8 mb-16">
           {skillCategories.map((category, index) => (
             <Card key={index} className="bg-card-gradient border border-primary/10">
               <CardContent className="p-6">
