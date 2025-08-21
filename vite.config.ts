@@ -9,6 +9,7 @@ export default defineConfig(({ mode }) => ({
     host: "::",
     port: 8080,
   },
+  base: '/qa-craftsmanship-hub/',
   plugins: [
     react(),
     mode === 'development' &&
