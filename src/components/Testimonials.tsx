@@ -102,7 +102,7 @@ const Testimonials = () => {
 
         <div className="text-center mt-12">
           <p className="text-muted-foreground">
-            Rejoignez plus de 10+ clients satisfaits qui m'ont font confiance pour leurs projets QA
+            Rejoignez plus de 10 clients satisfaits qui m'ont font confiance pour leurs projets QA
           </p>
         </div>
       </div>

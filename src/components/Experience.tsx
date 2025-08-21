@@ -13,7 +13,7 @@ const experiences = [
     achievements: [
       "Mise en place d'une stratégie de test complète",
       "Développement de tests Cypress pour l'interface pro",
-      "Formation de l'équipe aux bonnes pratiques QA"
+      "Réduction de 100% des échecs aléatoires (tests flaky)"
     ]
   },
   {
@@ -50,7 +50,7 @@ const experiences = [
     type: "Mission Freelance",
     description: "Tests des applications mobiles Android et iOS pour le suivi de conduite",
     achievements: [
-      "Tests automatisés sur devices réels",
+      "Tests sur devices réels",
       "Stratégie de test cross-platform",
       "Détection précoce de régressions"
     ]

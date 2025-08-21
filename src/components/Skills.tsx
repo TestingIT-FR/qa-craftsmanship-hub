@@ -22,10 +22,9 @@ const skillCategories = [
   {
     title: "Méthodologies",
     skills: [
+      { name: "Quality Assurance", level: 98, color: "bg-primary" },
       { name: "Test Strategy", level: 98, color: "bg-primary" },
       { name: "CI/CD", level: 85, color: "bg-red-500" },
-      { name: "Quality Assurance", level: 98, color: "bg-primary" },
-      { name: "Scrum", level: 95, color: "bg-indigo-500" }
     ]
   }
 ];
