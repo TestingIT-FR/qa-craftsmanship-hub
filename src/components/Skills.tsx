@@ -27,13 +27,6 @@ const skillCategories = [
       { name: "Quality Assurance", level: 98, color: "bg-primary" },
       { name: "Scrum", level: 95, color: "bg-indigo-500" }
     ]
-  },
-  {
-    title: "Langues",
-    skills: [
-      { name: "Français", description: "Maternel" },
-      { name: "Anglais", description: "Maîtrise professionnelle internationale (TOEIC 920)" }
-    ]
   }
 ];
 
@@ -50,37 +43,28 @@ const Skills = () => {
           </p>
         </div>
         
-        <div className="grid lg:grid-cols-4 md:grid-cols-2 gap-8 mb-16">
+        <div className="grid lg:grid-cols-3 gap-8 mb-16">
           {skillCategories.map((category, index) => (
             <Card key={index} className="bg-card-gradient border border-primary/10">
               <CardContent className="p-6">
                 <h3 className="text-lg font-semibold mb-6 text-center">{category.title}</h3>
-                 <div className="space-y-4">
-                   {category.skills.map((skill, idx) => (
-                     <div key={idx}>
-                       {category.title === "Langues" ? (
-                         <div className="flex justify-between items-center">
-                           <span className="text-sm font-medium">{skill.name}</span>
-                           <span className="text-xs text-muted-foreground">{skill.description}</span>
-                         </div>
-                       ) : (
-                         <>
-                           <div className="flex justify-between items-center mb-2">
-                             <span className="text-sm font-medium">{skill.name}</span>
-                             <span className="text-xs text-muted-foreground">{skill.level}%</span>
-                           </div>
-                           <Progress value={skill.level} className="h-2" />
-                         </>
-                       )}
-                     </div>
-                   ))}
-                 </div>
+                <div className="space-y-4">
+                  {category.skills.map((skill, idx) => (
+                    <div key={idx}>
+                      <div className="flex justify-between items-center mb-2">
+                        <span className="text-sm font-medium">{skill.name}</span>
+                        <span className="text-xs text-muted-foreground">{skill.level}%</span>
+                      </div>
+                      <Progress value={skill.level} className="h-2" />
+                    </div>
+                  ))}
+                </div>
               </CardContent>
             </Card>
           ))}
         </div>
         
-        <div className="max-w-2xl mx-auto">
+        <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
           <Card className="bg-card-gradient border border-primary/10">
             <CardContent className="p-8">
               <h3 className="text-xl font-semibold mb-6 text-center">Secteurs d'activité</h3>
@@ -99,6 +83,22 @@ const Skills = () => {
                     <span className="text-sm">{sector}</span>
                   </div>
                 ))}
+              </div>
+            </CardContent>
+          </Card>
+
+          <Card className="bg-card-gradient border border-primary/10">
+            <CardContent className="p-8">
+              <h3 className="text-xl font-semibold mb-6 text-center">Langues</h3>
+              <div className="space-y-4">
+                <div className="flex justify-between items-center p-3 rounded-lg bg-primary/5">
+                  <span className="font-medium">Français</span>
+                  <span className="text-sm text-muted-foreground">Maternel</span>
+                </div>
+                <div className="flex justify-between items-center p-3 rounded-lg bg-primary/5">
+                  <span className="font-medium">Anglais</span>
+                  <span className="text-sm text-muted-foreground">Professionnel (TOEIC 920)</span>
+                </div>
               </div>
             </CardContent>
           </Card>
