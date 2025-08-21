@@ -31,8 +31,8 @@ const skillCategories = [
   {
     title: "Langues",
     skills: [
-      { name: "Français", level: 100, color: "bg-blue-600" },
-      { name: "Anglais", level: 85, color: "bg-red-500" }
+      { name: "Français", description: "Maternel" },
+      { name: "Anglais", description: "Maîtrise professionnelle internationale (TOEIC 920)" }
     ]
   }
 ];
@@ -55,17 +55,26 @@ const Skills = () => {
             <Card key={index} className="bg-card-gradient border border-primary/10">
               <CardContent className="p-6">
                 <h3 className="text-lg font-semibold mb-6 text-center">{category.title}</h3>
-                <div className="space-y-4">
-                  {category.skills.map((skill, idx) => (
-                    <div key={idx}>
-                      <div className="flex justify-between items-center mb-2">
-                        <span className="text-sm font-medium">{skill.name}</span>
-                        <span className="text-xs text-muted-foreground">{skill.level}%</span>
-                      </div>
-                      <Progress value={skill.level} className="h-2" />
-                    </div>
-                  ))}
-                </div>
+                 <div className="space-y-4">
+                   {category.skills.map((skill, idx) => (
+                     <div key={idx}>
+                       {category.title === "Langues" ? (
+                         <div className="flex justify-between items-center">
+                           <span className="text-sm font-medium">{skill.name}</span>
+                           <span className="text-xs text-muted-foreground">{skill.description}</span>
+                         </div>
+                       ) : (
+                         <>
+                           <div className="flex justify-between items-center mb-2">
+                             <span className="text-sm font-medium">{skill.name}</span>
+                             <span className="text-xs text-muted-foreground">{skill.level}%</span>
+                           </div>
+                           <Progress value={skill.level} className="h-2" />
+                         </>
+                       )}
+                     </div>
+                   ))}
+                 </div>
               </CardContent>
             </Card>
           ))}
