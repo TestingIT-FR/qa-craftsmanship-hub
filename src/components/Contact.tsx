@@ -9,7 +9,8 @@ import {
   Github,
   Linkedin,
   MessageCircle,
-  FileText
+  FileText,
+  Calendar
 } from "lucide-react";
 
 const contactMethods = [
@@ -19,6 +20,14 @@ const contactMethods = [
     description: "La meilleure façon de me contacter",
     action: "M'écrire",
     link: "mailto:stephane-testingit@pm.me",
+    primary: true
+  },
+  {
+    icon: Calendar,
+    title: "Calendly",
+    description: "Programmer un rendez-vous directement",
+    action: "Réserver un créneau",
+    link: "https://calendly.com/stephane-colson/30min",
     primary: true
   },
   {

@@ -7,7 +7,9 @@ import {
   Users, 
   Target, 
   ArrowRight,
-  CheckCircle 
+  CheckCircle,
+  Calendar,
+  Mail
 } from "lucide-react";
 
 const services = [
@@ -79,11 +81,20 @@ const Services = () => {
             Que ce soit pour une mission courte ou longue, en équipe ou en solo, 
             discutons de votre projet pour trouver la meilleure approche.
           </p>
-          <Button size="lg" className="shadow-tech" asChild>
-            <a href="mailto:stephane-testingit@pm.me" target="_blank" rel="noopener noreferrer">
-              Discuter de votre projet
-            </a>
-          </Button>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Button size="lg" className="shadow-tech" asChild>
+              <a href="mailto:stephane-testingit@pm.me" target="_blank" rel="noopener noreferrer">
+                <Mail className="w-4 h-4 mr-2" />
+                M'écrire
+              </a>
+            </Button>
+            <Button size="lg" variant="outline" className="shadow-tech" asChild>
+              <a href="https://calendly.com/stephane-colson/30min" target="_blank" rel="noopener noreferrer">
+                <Calendar className="w-4 h-4 mr-2" />
+                Programmer un rendez-vous
+              </a>
+            </Button>
+          </div>
         </div>
       </div>
     </section>

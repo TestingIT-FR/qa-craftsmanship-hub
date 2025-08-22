@@ -1,6 +1,8 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
 import { Progress } from "@/components/ui/progress";
+import { Calendar, Mail } from "lucide-react";
 
 const skillCategories = [
   {
@@ -109,7 +111,7 @@ const Skills = () => {
             Mes compétences correspondent à vos besoins ? Discutons de votre projet 
             et voyons comment je peux vous aider à atteindre vos objectifs qualité.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-6">
             <Badge className="bg-primary/20 text-primary border-primary/30 p-2">
               📍 Lyon, Paris, Europe, Monde en remote...
             </Badge>
@@ -119,6 +121,20 @@ const Skills = () => {
             <Badge className="bg-green-500/20 text-green-700 border-green-500/30 p-2">
               ✅ Disponible
             </Badge>
+          </div>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Button className="shadow-tech" asChild>
+              <a href="mailto:stephane-testingit@pm.me" target="_blank" rel="noopener noreferrer">
+                <Mail className="w-4 h-4 mr-2" />
+                M'écrire
+              </a>
+            </Button>
+            <Button variant="outline" className="shadow-tech" asChild>
+              <a href="https://calendly.com/stephane-colson/30min" target="_blank" rel="noopener noreferrer">
+                <Calendar className="w-4 h-4 mr-2" />
+                Programmer un rendez-vous
+              </a>
+            </Button>
           </div>
         </div>
       </div>
