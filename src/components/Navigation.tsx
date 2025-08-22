@@ -2,10 +2,13 @@ import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Menu, X, Mail, ExternalLink } from "lucide-react";
+import LanguageSelector from "@/components/LanguageSelector";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const { t } = useLanguage();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -16,10 +19,10 @@ const Navigation = () => {
   }, []);
 
   const navItems = [
-    { href: "#services", label: "Services" },
-    { href: "#experience", label: "Expérience" },
-    { href: "#skills", label: "Compétences" },
-    { href: "#contact", label: "Contact" }
+    { href: "#services", label: t("nav.services") },
+    { href: "#experience", label: t("nav.experience") },
+    { href: "#skills", label: t("nav.skills") },
+    { href: "#contact", label: t("nav.contact") }
   ];
 
   const scrollToSection = (href: string) => {
@@ -68,22 +71,24 @@ const Navigation = () => {
 
           {/* Desktop Actions */}
           <div className="hidden md:flex items-center gap-4">
+            <LanguageSelector />
             <Badge className="bg-green-500/20 text-green-700 border-green-500/30">
-              ✅ Disponible
+              ✅ {t("nav.available")}
             </Badge>
             <Button 
               onClick={() => scrollToSection('#contact')}
               className="shadow-tech"
             >
               <Mail className="w-4 h-4 mr-2" />
-              Me contacter
+              {t("nav.contactMe")}
             </Button>
             <Button 
               variant="outline" 
               size="sm"
               onClick={() => window.open('https://www.malt.fr/profile/stephanecolson', '_blank')}
             >
-              <ExternalLink className="w-4 h-4" />
+              {t("nav.maltProfile")}
+              <ExternalLink className="w-4 h-4 ml-1" />
             </Button>
           </div>
 
@@ -110,22 +115,23 @@ const Navigation = () => {
                 </button>
               ))}
               <div className="flex flex-col gap-3 pt-4 border-t border-border">
+                <LanguageSelector />
                 <Badge className="bg-green-500/20 text-green-700 border-green-500/30 w-fit">
-                  ✅ Disponible
+                  ✅ {t("nav.available")}
                 </Badge>
                 <Button 
                   onClick={() => scrollToSection('#contact')}
                   className="w-full"
                 >
                   <Mail className="w-4 h-4 mr-2" />
-                  Me contacter
+                  {t("nav.contactMe")}
                 </Button>
                 <Button 
                   variant="outline" 
                   onClick={() => window.open('https://www.malt.fr/profile/stephanecolson', '_blank')}
                   className="w-full"
                 >
-                  Voir profil Malt
+                  {t("nav.maltProfile")}
                   <ExternalLink className="w-4 h-4 ml-2" />
                 </Button>
               </div>

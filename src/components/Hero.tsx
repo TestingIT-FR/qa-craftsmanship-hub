@@ -1,10 +1,13 @@
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { ArrowRight, Download, Mail } from "lucide-react";
+import { useLanguage } from "@/contexts/LanguageContext";
 import qaHeroImage from "@/assets/qa-automation-hero.jpg";
 import stephanePortrait from "@/assets/stephane-profile-real.jpg";
 
 const Hero = () => {
+  const { t } = useLanguage();
+  
   return (
     <section className="relative min-h-screen flex items-center justify-center bg-hero-gradient overflow-hidden">
       {/* Background decoration */}
@@ -17,34 +20,32 @@ const Hero = () => {
         <div className="text-white space-y-8">
           <div className="space-y-4">
             <Badge className="bg-white/20 text-white border-white/30 backdrop-blur-sm">
-              Expert QA & Automatisation
+              {t("hero.badge")}
             </Badge>
             <h1 className="text-5xl lg:text-6xl font-bold leading-tight">
-              Stéphane Colson
+              {t("hero.name")}
             </h1>
             <p className="text-xl lg:text-2xl text-white/90 font-medium">
-              QA | Automatisation | Cypress 🤖 | Playwright 🤖
+              {t("hero.subtitle")}
             </p>
           </div>
           
           <p className="text-lg text-white/80 leading-relaxed max-w-xl">
-            Plus de 20 ans d'expérience en tant que testeur logiciel. 
-            Je vous aide à mettre en place des stratégies de test efficaces 
-            et à automatiser efficacement.
+            {t("hero.description")}
           </p>
           
           <div className="flex items-center gap-8 pt-8 border-t border-white/20">
             <div className="text-center">
               <div className="text-2xl font-bold text-white">20+</div>
-              <div className="text-sm text-white/70">Années d'expérience</div>
+              <div className="text-sm text-white/70">{t("hero.yearsExperience")}</div>
             </div>
             <div className="text-center">
               <div className="text-2xl font-bold text-white">56</div>
-              <div className="text-sm text-white/70">Projets réalisés</div>
+              <div className="text-sm text-white/70">{t("hero.projectsCompleted")}</div>
             </div>
             <div className="text-center">
               <div className="text-2xl font-bold text-white">100%</div>
-              <div className="text-sm text-white/70">Taux de satisfaction</div>
+              <div className="text-sm text-white/70">{t("hero.satisfactionRate")}</div>
             </div>
           </div>
         </div>
@@ -68,11 +69,11 @@ const Hero = () => {
                 className="w-16 h-16 rounded-full object-cover"
               />
               <div>
-                <h3 className="font-semibold text-primary">Stéphane Colson</h3>
+                <h3 className="font-semibold text-primary">{t("hero.name")}</h3>
                 <p className="text-sm text-muted-foreground">QA Expert</p>
                 <div className="flex items-center gap-1 mt-1">
                   <div className="w-2 h-2 bg-green-500 rounded-full"></div>
-                  <span className="text-xs text-muted-foreground">Disponible</span>
+                  <span className="text-xs text-muted-foreground">{t("hero.available")}</span>
                 </div>
               </div>
             </div>
