@@ -41,7 +41,7 @@ const contactMethods = [
   {
     icon: Linkedin,
     title: "LinkedIn",
-    description: "Réseau professionnel",
+    description: "Réseau professionnel et parcours détaillé",
     action: "Se connecter",
     link: "https://www.linkedin.com/in/stephanecolson/",
     primary: false
