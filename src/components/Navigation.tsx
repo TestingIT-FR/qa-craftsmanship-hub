@@ -42,7 +42,7 @@ const Navigation = () => {
           <div className="flex items-center gap-3">
             <div className="w-10 h-10 rounded-lg overflow-hidden bg-white/10 backdrop-blur-sm">
               <img 
-                src="/lovable-uploads/9107669c-5ad1-4bab-884c-73e9dd8fe892.png" 
+                src="/qa-craftsmanship-hub/lovable-uploads/9107669c-5ad1-4bab-884c-73e9dd8fe892.png" 
                 alt="Logo de l'entreprise"
                 className="w-full h-full object-cover"
               />
